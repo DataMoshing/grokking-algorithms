@@ -10,8 +10,7 @@ def binary_search(list, item):
     high = len(list) - 1
 
     while low <= high:  # Continue search as long as lower index is lower or equal to high index
-        mid = low + high    # Calulate the middle index
-        print (mid)
+        mid = low + high   # Calulate the middle index
         guess = list[mid]   # Get the item at mid index
         if guess == item:  # If the guess is equal to the target item, return the index
             return mid
