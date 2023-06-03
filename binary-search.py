@@ -2,13 +2,16 @@
 
 # ^ A shebang line defines where the interpreter is located. In this case, the python3 interpreter is located in /usr/bin/python3.Without the shebang line, the operating system does not know it's a python script. (Interesting!)
 
+#Binary search is an algorithm; its input is a sorted list of elements looking for is in that list, binary search returns the position where it’s located
+
 def binary_search(list, item):
     # Low and high to keep track of which part of the list you'll search in
     low = 0
     high = len(list) - 1
 
     while low <= high:  # Continue search as long as lower index is lower or equal to high index
-        mid = low + high   # Calulate the middle index
+        mid = low + high    # Calulate the middle index
+        print (mid)
         guess = list[mid]   # Get the item at mid index
         if guess == item:  # If the guess is equal to the target item, return the index
             return mid
